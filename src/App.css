@@ -1,0 +1,53 @@
+body {
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #93929289;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'lobster', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* centrar todo */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  /* quitar apparence */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* quitar outline */
+}
+
+button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid darkolivegreen;
+  border-radius: 5px;
+  background-color: darkolivegreen;
+  color: white;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+}

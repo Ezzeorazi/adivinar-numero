@@ -82,15 +82,16 @@ function App() {
         <button onClick={handleGuess} disabled={gameOver}>
           Enviar
         </button>
+        {gameOver && (
+          <button onClick={handleReset}>Jugar de nuevo</button> // Mostrar botón sólo cuando el juego termina
+        )}
         <p>{message}</p>
         <div className="imagen">
           {image && <img src={image} alt="Resultado del juego" />}{" "}
         </div>
         <p>Intentos: {counter}</p>
         <p>Puntaje más alto: {highScore}</p>
-        {gameOver && (
-          <button onClick={handleReset}>Jugar de nuevo</button> // Mostrar botón sólo cuando el juego termina
-        )}
+        
       </div>
     </>
   );

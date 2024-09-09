@@ -8,7 +8,7 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [randomNumber, setRandomNumber] = useState(0);
   const [image, setImage] = useState(null);
-  const [gameOver, setGameOver] = useState(false); // Nuevo estado para detectar si terminó el juego
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     generateRandomNumber();

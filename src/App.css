@@ -1,3 +1,11 @@
+/* Asegura que el html y body ocupen toda la altura de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos base */
 body {
   font-family: 'roboto', sans-serif;
   margin: 0;
@@ -5,8 +13,16 @@ body {
   background-color: #747474b0;
   color: white;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos de manera que el footer esté al final */
+}
+
+/* Estilo para el contenedor principal */
+main {
+  flex: 1; /* Ocupará todo el espacio disponible entre el header y el footer */
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -16,7 +32,7 @@ h1 {
   margin-top: 0;
 }
 
-/* centrar todo */
+/* Centra todo el contenido dentro del container */
 .container {
   display: flex;
   flex-direction: column;
@@ -38,7 +54,6 @@ input[type=number] {
   appearance: textfield;
 }
 
-
 input {
   padding: 0.5rem;
   margin: 4px;
@@ -53,7 +68,6 @@ button {
   border-radius: 5px;
   background-color: black;
   color: white;
-  align-items: center;
 }
 
 button:hover {

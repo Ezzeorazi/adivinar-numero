@@ -93,6 +93,7 @@ function App() {
         <p>Puntaje más alto: {highScore}</p>
         
       </div>
+      
     </>
   );
 }
